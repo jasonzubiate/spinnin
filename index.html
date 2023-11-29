@@ -10,8 +10,21 @@
     <main>
       <div class="container">
         <h1>SPINNIN STUDIO</h1>
-        <p>2024</p>
+        <p>SEE YOU IN 2024</p>
       </div>
+      <a href="#" onclick="emailRedirect()">CANT WAIT?</a>
     </main>
   </body>
+  <script>
+    function emailRedirect() {
+      const emailAddress = "jzubiate.dev@gmail.com";
+      const subject = "🤙 I am looking for a Web Developer. Let's talk";
+
+      const mailtoUrl = `mailto:${emailAddress}?subject=${encodeURIComponent(
+        subject
+      )}`;
+
+      window.location.href = mailtoUrl;
+    }
+  </script>
 </html>

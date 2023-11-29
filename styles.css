@@ -10,12 +10,22 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 h1 {
   line-height: 0;
+  font-size: clamp(20px, 2.5dvw, 92px);
+}
+p, a {
+  font-size: clamp(10px, 0.8dvw, 16px);
 }
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+a, a:visited {
+  position: absolute;
+  bottom: 3rem;
+  color: whitesmoke;
 }
