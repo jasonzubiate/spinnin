@@ -1,6 +1,5 @@
 import submitContactForm from "@/actions/submitContactForm";
 import { emailRedirect } from "@/utils";
-import Head from "next/head";
 import { Dispatch, SetStateAction } from "react";
 import Draggable from "react-draggable";
 
@@ -11,12 +10,6 @@ type ContactModalProps = {
 export default function ContactModal({ toggleModal }: ContactModalProps) {
   return (
     <Draggable handle="#contact-modal-header">
-      <Head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, user-scalable=no"
-        />
-      </Head>
       <form
         action={submitContactForm}
         id="contact-modal"
