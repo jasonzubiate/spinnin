@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export function constructMetaData({
   title = "Spinnin",
   description = "Web development with a beat of innovation.",
-  image = "/assets/img/OGImage.png",
+  image = "/img/OGImage.png",
   icons = "/favicon.ico",
   noIndex = false,
 }: {
