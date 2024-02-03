@@ -1,6 +1,8 @@
+"use client";
+
 import submitContactForm from "@/actions/submitContactForm";
 import { emailRedirect } from "@/utils";
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef } from "react";
 import Draggable from "react-draggable";
 
 type ContactModalProps = {
@@ -8,10 +10,32 @@ type ContactModalProps = {
 };
 
 export default function ContactModal({ toggleModal }: ContactModalProps) {
+  const modalRef = useRef<any>(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
+        toggleModal(false);
+      }
+    };
+
+    if (modalRef) {
+      document.addEventListener("mousedown", handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [toggleModal]);
+
   return (
     <Draggable handle="#contact-modal-header">
       <form
         action={submitContactForm}
+        ref={modalRef}
         id="contact-modal"
         className="w-4/5 lg:w-[650px] flex flex-col absolute z-20 "
       >
