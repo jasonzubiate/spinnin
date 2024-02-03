@@ -108,7 +108,7 @@ export default function Hero() {
           <div className="h-[5dvh] w-[10vw] relative wave">
             <Image src={glove} alt="glove icon" fill />
           </div>
-          <span className="marquee_item">Brand.</span>
+          <span className="marquee_item">Business.</span>
           {/* <span className="marquee overflow-hidden h-[6dvh]">
             <div className="marquee_track w-full h-full relative flex flex-col items-start">
               <span className="marquee_item">Shop.</span>
@@ -169,7 +169,7 @@ export default function Hero() {
               priority
             />
           </div>
-          <span className="marquee_item">Brand.</span>
+          <span className="marquee_item">Business.</span>
           {/* <span className="marquee overflow-hidden h-[7.5dvh] xl:h-[9dvh] 2xl:h-[10dvh] min-[1800px]:h-[12dvh] min-[2200px]:h-[15dvh]">
             <div className="marquee_track w-full h-full relative flex flex-col items-start">
               <span className="marquee_item">Shop.</span>
