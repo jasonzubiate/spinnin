@@ -10,18 +10,18 @@
   box-sizing: border-box;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Kalam";
   src: url(/public/fonts/Kalam-Bold.otf);
-}
+} */
 
 .geist {
   font-family: "Geist Mono", "Helvetica Neue", Helvetica;
 }
 
-.kalam {
+/* .kalam {
   font-family: "Kalam", "Helvetica Neue", Helvetica;
-}
+} */
 
 body {
   font-family: "Helvetica Neue", Helvetica;
