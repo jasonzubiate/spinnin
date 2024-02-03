@@ -79,7 +79,7 @@ h2 {
 }
 
 .cursor-dot {
-  @apply w-[8px] h-[8px] bg-[#0F0F0F] rounded-full fixed pointer-events-none opacity-0 z-10;
+  @apply hidden sm:flex w-[8px] h-[8px] bg-[#0F0F0F] rounded-full fixed pointer-events-none opacity-0 z-10;
 }
 
 /* WEBKIT */
