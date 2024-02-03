@@ -29,11 +29,11 @@ body {
 }
 
 .clipper {
-  clip-path: inset(0 0 0 0)
+  clip-path: inset(0 0 0 0);
 }
 
 .loader-text {
-  @apply w-max h-full p-[4em] flex items-center uppercase text-xl text-trace-ash
+  @apply w-max h-full p-[4em] flex items-center uppercase text-xl text-trace-ash;
 }
 
 .mask {
@@ -71,7 +71,7 @@ h2 {
 }
 
 .marquee_item {
-  @apply w-full h-full
+  @apply w-full h-full;
 }
 
 .h2-row {
@@ -173,13 +173,13 @@ h2 {
     transform: rotate(0deg) scale(1);
   }
   25% {
-    transform: rotate(90deg) scale(.9);
+    transform: rotate(90deg) scale(0.9);
   }
   50% {
     transform: rotate(180deg) scale(1);
   }
   75% {
-    transform: rotate(270deg) scale(.9);
+    transform: rotate(270deg) scale(0.9);
   }
   100% {
     transform: rotate(360deg) scale(1);

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 
 import star from "@/public/icons/minimalsStar.png";
 import lightning from "@/public/icons/lightning.png";
@@ -21,31 +21,31 @@ import $ from "jquery";
 
 export default function Hero() {
   const [modal, setModal] = useState(false);
-  const heroRef1 = useRef(null);
-  const heroRef2 = useRef(null);
 
-  useGSAP(() => {
-    let tl = gsap.timeline({
-      repeat: -1,
-      defaults: { duration: 0.5, delay: 1, ease: "expo.inOut" },
-    });
+  // useGSAP(() => {
+  //   let tl = gsap.timeline({
+  //     repeat: -1,
+  //     defaults: { duration: 0.5, delay: 1, ease: "expo.inOut" },
+  //   });
 
-    $(".marquee").each(function (index: number) {
-      let track = $(this).find(".marquee_track");
-      let items = $(this).find(".marquee_item");
-      let tl = gsap.timeline({
-        repeat: -1,
-        defaults: { duration: 0.5, delay: 2, ease: "power2.inOut" },
-      });
+  //   if (typeof window !== "undefined") {
+  //     $(".marquee").each(function (index: number) {
+  //       let track = $(this).find(".marquee_track");
+  //       let items = $(this).find(".marquee_item");
+  //       let tl = gsap.timeline({
+  //         repeat: -1,
+  //         defaults: { duration: 0.5, delay: 2, ease: "power2.inOut" },
+  //       });
 
-      items.each(function (index: number) {
-        let distance = (index + 1) * -100;
-        tl.to(track, { yPercent: distance });
-      });
+  //       items.each(function (index: number) {
+  //         let distance = (index + 1) * -100;
+  //         tl.to(track, { yPercent: distance });
+  //       });
 
-      items.first().clone().appendTo(track);
-    });
-  }, []);
+  //       items.first().clone().appendTo(track);
+  //     });
+  //   }
+  // }, []);
 
   return (
     <section className="flex flex-col items-center justify-center gap-12 h-[100dvh]">
@@ -108,18 +108,14 @@ export default function Hero() {
           <div className="h-[9vw] w-[9vw] relative wave">
             <Image src={glove} alt="glove icon" fill />
           </div>
-          <span className="marquee overflow-hidden h-[11vw]">
+          <span className="marquee_item">Brand.</span>
+          {/* <span className="marquee overflow-hidden h-[6dvh]">
             <div className="marquee_track w-full h-full relative flex flex-col items-start">
-              <span className="marquee_item ">Brand.</span>
-              <span className="marquee_item">Vision.</span>
               <span className="marquee_item">Shop.</span>
+              <span className="marquee_item">Vision.</span>
               <span className="marquee_item">Image.</span>
-              <span className="marquee_item">Goals.</span>
-              <span className="marquee_item">Ideas.</span>
-              <span className="marquee_item">Self.</span>
-              <span className="marquee_item">Brand.</span>
             </div>
-          </span>
+          </span> */}
         </span>
       </h1>
 
@@ -173,17 +169,14 @@ export default function Hero() {
               priority
             />
           </div>
-          <span className="marquee overflow-hidden h-[6vw] 2xl:h-[10vh] min-[1800px]:h-[12vh] min-[2200px]:h-[15vh]">
+          <span className="marquee_item">Brand.</span>
+          {/* <span className="marquee overflow-hidden h-[7.5dvh] xl:h-[9dvh] 2xl:h-[10dvh] min-[1800px]:h-[12dvh] min-[2200px]:h-[15dvh]">
             <div className="marquee_track w-full h-full relative flex flex-col items-start">
-              <span className="marquee_item">Brand.</span>
-              <span className="marquee_item">Vision.</span>
               <span className="marquee_item">Shop.</span>
               <span className="marquee_item">Image.</span>
-              <span className="marquee_item">Goals.</span>
-              <span className="marquee_item">Ideas.</span>
-              <span className="marquee_item">Self.</span>
+              <span className="marquee_item">Vision.</span>
             </div>
-          </span>
+          </span> */}
         </span>
       </h1>
 
