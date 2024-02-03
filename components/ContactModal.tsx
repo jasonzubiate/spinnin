@@ -13,7 +13,7 @@ export default function ContactModal({ toggleModal }: ContactModalProps) {
       <form
         action={submitContactForm}
         id="contact-modal"
-        className="w-4/5 lg:w-[650px] flex flex-col absolute z-20"
+        className="w-4/5 lg:w-[650px] flex flex-col absolute z-20 "
       >
         <div
           id="contact-modal-header"
@@ -48,7 +48,7 @@ export default function ContactModal({ toggleModal }: ContactModalProps) {
             </a>
             ,{" "}
             <a
-              href="https:jasonzubiate.com"
+              href="https://jasonzubiate.com"
               target="_blank"
               className="underline"
             >

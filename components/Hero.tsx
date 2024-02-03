@@ -105,7 +105,7 @@ export default function Hero() {
         </span>
 
         <span className="h1-row-mobile">
-          <div className="h-[9vw] w-[9vw] relative wave">
+          <div className="h-[5dvh] w-[10vw] relative wave">
             <Image src={glove} alt="glove icon" fill />
           </div>
           <span className="marquee_item">Brand.</span>
@@ -160,7 +160,7 @@ export default function Hero() {
 
         <span className="h1-row-desktop">
           <span>Your</span>
-          <div className="w-[8vw] h-[5vw] relative">
+          <div className="w-[13vw] h-[5vw] relative">
             <Image
               src={daffyGIF}
               alt="daffy icon"
