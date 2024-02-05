@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import LenisContext from "@/context/LenisContext";
 import Header from "@/components/Header";
 import "./globals.css";
@@ -20,6 +21,7 @@ export default function RootLayout({
           <CursorDot />
           {children}
           <Bottom />
+          <Analytics />
         </LenisContext>
       </body>
     </html>
