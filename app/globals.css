@@ -10,15 +10,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Geist Mono";
-  src: url(/public/fonts/GeistMono-Regular.otf);
-}
-
-.geist {
-  font-family: "Geist Mono", "Helvetica Neue", Helvetica;
-}
-
 /* .kalam {
   font-family: "Kalam", "Helvetica Neue", Helvetica;
 } */
