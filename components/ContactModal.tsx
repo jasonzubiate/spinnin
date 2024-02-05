@@ -72,6 +72,14 @@ export default function ContactModal({ toggleModal }: ContactModalProps) {
             </a>
             ,{" "}
             <a
+              href="https://www.linkedin.com/company/spinninstudio"
+              target="_blank"
+              className="underline"
+            >
+              LinkedIn
+            </a>
+            ,{" "}
+            <a
               href="https://jasonzubiate.com"
               target="_blank"
               className="underline"

@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export function constructMetaData({
-  title = "Spinnin",
-  description = "Web development with a beat of innovation.",
+  title = "SPINNIN | Design, Development & Graphics",
+  description = "We can help you with Web Design, Development, SEO, Motion Design, UI / UX Design. Professional, friendly and talented team. Get in touch!",
   image = "/img/OGImage.png",
   icons = "/favicon.ico",
   noIndex = false,
