@@ -1,6 +1,6 @@
 "use client";
 
-import { GeistMono } from 'geist/font/mono'
+import { GeistMono } from "geist/font/mono";
 import submitContactForm from "@/actions/submitContactForm";
 import { emailRedirect } from "@/utils";
 import { Dispatch, SetStateAction, useEffect, useRef } from "react";
@@ -33,12 +33,12 @@ export default function ContactModal({ toggleModal }: ContactModalProps) {
   }, [toggleModal]);
 
   return (
-    <Draggable handle="#contact-modal-header" >
+    <Draggable handle="#contact-modal-header">
       <form
         action={submitContactForm}
         ref={modalRef}
         id="contact-modal"
-        className={`${GeistMono.className} w-4/5 lg:w-[650px] flex flex-col absolute z-20`}
+        className="w-4/5 lg:w-[650px] flex flex-col absolute z-20"
       >
         <div
           id="contact-modal-header"
@@ -55,12 +55,12 @@ export default function ContactModal({ toggleModal }: ContactModalProps) {
             Contact
           </label>
         </div>
-        <div className="h-[400px] flex flex-col p-4 gap-3 bg-[#1E1E1E] text-demo-smoke">
+        <div
+          className={`${GeistMono.className} h-[400px] flex flex-col p-4 gap-3 bg-[#1E1E1E] text-demo-smoke`}
+        >
           <div className="flex flex-col">
             <p className="text-sm font-light">Spinnin.studio</p>
-            <p className="text-sm font-light">
-              ©{new Date().getFullYear()}
-            </p>
+            <p className="text-sm font-light">©{new Date().getFullYear()}</p>
           </div>
           <p className="text-sm font-light">
             Links:{" "}

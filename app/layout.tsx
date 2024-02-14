@@ -5,6 +5,7 @@ import "./globals.css";
 import Bottom from "@/components/Bottom";
 import CursorDot from "@/components/CursorDot";
 import { constructMetaData } from "@/utils/metadata";
+import Footer from "@/components/Footer";
 
 export const metadata = constructMetaData();
 
@@ -21,6 +22,7 @@ export default function RootLayout({
           <CursorDot />
           {children}
           <Bottom />
+          <Footer />
           <Analytics />
         </LenisContext>
       </body>

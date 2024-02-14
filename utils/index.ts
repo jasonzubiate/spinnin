@@ -3,7 +3,8 @@ export function getLocalTimeLosAngeles(): string {
   const options = {
     hour: "numeric",
     minute: "numeric",
-    hour12: true,
+    second: "numeric",
+    hour12: false,
   } as Intl.DateTimeFormatOptions;
 
   const timeZone = "America/Los_Angeles";

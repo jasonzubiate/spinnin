@@ -137,7 +137,7 @@ export default function Hero() {
           <div className="h-[5vw] w-[5vw] relative wave">
             <Image src={glove} alt="glove icon" fill />
           </div>
-          <div className="w-[160px] h-[56px] relative">
+          <div className="w-[10vw] h-[7vh] relative">
             <Image src={arrow} alt="arrow icon" fill />
           </div>
           <span>Beat </span>
