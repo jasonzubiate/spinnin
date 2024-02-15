@@ -10,7 +10,7 @@ export default function Services() {
         <h3 className={`${GeistMono.className} text-sm uppercase`}>Services</h3>
         <p className="text-[3vw] md:text-[2vw] leading-tight uppercase md:w-3/5">
           We blend creativity with practical design to make your online presence
-          unforgettable. Whether you're promoting a product, or showcasing your
+          unforgettable. Whether you&apos;re promoting a product, or showcasing your
           art, we create websites that leave a lasting impact.
         </p>
       </div>
