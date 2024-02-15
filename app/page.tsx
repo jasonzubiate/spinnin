@@ -2,20 +2,15 @@
 
 import About from "@/components/About";
 import Hero from "@/components/Hero";
-import MarqueeBlack from "@/components/MarqueeBlack";
-import MarqueeWhite from "@/components/MarqueeWhite";
-import Samples from "@/components/Samples";
 import Services from "@/components/Services";
-import Work from "@/components/Work";
+import Samples from "@/components/Samples";
 
 export default function Home() {
   return (
     <main id="home">
       <Hero />
       <About />
-      {/* <Work /> */}
-      {/* <Services /> */}
-      {/* <MarqueeWhite /> */}
+      <Services />
       <Samples />
     </main>
   );
